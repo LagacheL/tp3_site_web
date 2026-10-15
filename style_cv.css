@@ -1,0 +1,159 @@
+body {
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  color: #444;
+  margin: 0;
+  padding: 10px;
+}
+
+
+.page {
+  display: flex;
+  width: 720px;
+  min-height: 1010px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+
+.gauche {
+  width: 232px;
+  background-color: #eeeeee;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+
+.droite {
+  width: 488px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+
+.rond {
+  width: 104px;
+  height: 104px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 50px;
+  text-align: center;
+  line-height: 104px;
+  margin: 0 auto 40px auto;
+}
+
+
+.titre {
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+
+.barre {
+  width: 60px;
+  height: 5px;
+  background-color: #7f8a8c;
+  margin-bottom: 15px;
+}
+
+
+.centre {
+  text-align: center;
+}
+
+.barre-profil {
+  margin: 0 auto 150px auto;
+}
+
+.espace-contact {
+  height: 110px;
+}
+
+.espace-experiences {
+  margin-top: 30px;
+}
+
+.espace-competences {
+  margin-top: 40px;
+}
+
+
+.nom {
+  font-size: 42px;
+  color: black;
+  margin: 0;
+}
+
+.diplome {
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: #777;
+  margin-bottom: 35px;
+}
+
+
+.formation {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+
+.experience {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.date-lieu {
+  width: 93px;
+  font-weight: bold;
+}
+
+.lieu {
+  color: #777;
+  margin-top: 8px;
+}
+
+.poste {
+  font-weight: bold;
+  color: black;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+
+ul {
+  margin: 4px 0 0 0;
+  padding-left: 18px;
+  font-size: 11px;
+  color: #666;
+}
+
+
+.contact {
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.competences {
+  display: flex;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.col-competence {
+  width: 50%;
+}
+
+.col-competence p {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+}
+
+.sous-titre {
+  color: #333;
+  margin-bottom: 15px;
+}
