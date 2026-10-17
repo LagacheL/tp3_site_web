@@ -1,14 +1,65 @@
-#HautDePage {
-    background-color: red;
-    height: 50px;
+body {
+    margin: 0;
+    /* supprime la marge par défaut du navigateur */
+    font-family: Arial, sans-serif;
+    /* police du texte */
+    line-height: 1.6;
+    /* espace entre les lignes, pour mieux lire */
+    color: #222222;
+    /* couleur du texte (gris foncé) */
+    background-color: #f4f4f4;
+    /* fond de la page (gris très clair) */
+}
 
 
-#Acceuil {
-    background-color: rgb(216, 216, 216);
-    height: 150px;
+h1 {
+    text-align: center;
+    color: #1b2a49;
 }
+
+
+
+header {
+    background-color: #1b2a49;
+    padding: 15px;
+    text-align: center;
 }
-#PiedDePage{
-    background-color: yellow;
-    height: 300px;
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    /* met les liens côte à côte au lieu de les empiler */
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    /* enlève le soulignement */
+    font-weight: bold;
+    /* texte en gras */
+}
+
+
+main {
+    max-width: 800px;
+    /* largeur maximale du contenu */
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    border-left: 5px solid #b3202a;
+    /* trait rouge sur le côté gauche */
+    border-radius: 8px;
+    /* coins arrondis */
+    padding: 10px 20px;
+    /* espace entre le bord et le texte */
+    margin: 20px 10px;
+    /* espace entre les blocs */
 }
