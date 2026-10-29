@@ -63,3 +63,28 @@ section {
     margin: 20px 10px;
     /* espace entre les blocs */
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Titre du tableau, placé au-dessus */
+caption {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Cellules : bordure fine et espace intérieur */
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* En-têtes de colonnes sur fond bleu foncé */
+th {
+    background-color: #1b2a49;
+    color: white;
+}
