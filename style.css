@@ -88,3 +88,39 @@ th {
     background-color: #1b2a49;
     color: white;
 }
+
+/* Couleurs des cellules de la colonne "Ceinture" */
+td.blanche {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+td.jaune {
+    background-color: #f5d800;
+    color: #222222;
+}
+
+td.orange {
+    background-color: #f28c00;
+    color: #222222;
+}
+
+td.verte {
+    background-color: #2e8b3d;
+    color: white;
+}
+
+td.bleue {
+    background-color: #1f5fbf;
+    color: white;
+}
+
+td.marron {
+    background-color: #6b3e1e;
+    color: white;
+}
+
+td.noire {
+    background-color: #111111;
+    color: white;
+}
