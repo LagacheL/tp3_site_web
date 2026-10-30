@@ -124,3 +124,38 @@ td.noire {
     background-color: #111111;
     color: white;
 }
+
+/* Grille de vignettes : autant de colonnes que la largeur le permet */
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    /* espace entre les vignettes */
+}
+
+/* Supprime la marge par défaut de <figure> */
+figure {
+    margin: 0;
+}
+
+/* Toutes les vignettes ont la même taille, sans déformer l'image */
+figure img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    /* animation douce au survol */
+}
+
+/* Léger zoom quand la souris passe sur une vignette */
+figure img:hover {
+    transform: scale(1.05);
+}
+
+/* Légende sous la vignette */
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

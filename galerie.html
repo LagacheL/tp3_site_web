@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie photos du judo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="techniques.html">Techniques</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="CV_FR.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>La galerie du judo</h1>
+
+    <main>
+
+        <section>
+            <h2>Quelques images</h2>
+            <p>
+                Cliquez sur une vignette pour afficher l'image en grand.
+            </p>
+
+            <!-- Conteneur des vignettes : le CSS les range en grille -->
+            <div class="galerie">
+
+                <!-- Une figure = une image + sa légende -->
+                <figure>
+                    <!-- Le lien ouvre l'image en grand, la vignette est l'image réduite -->
+                    <a href="images/judo1.jpg">
+                        <img src="images/judo1.jpg" alt="Deux judokas pendant une projection" loading="lazy">
+                    </a>
+                    <figcaption>Une projection au tatami</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/judo2.jpg">
+                        <img src="images/judo2.jpg" alt="Judoka en ceinture noire" loading="lazy">
+                    </a>
+                    <figcaption>Une ceinture noire</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/judo3.jpg">
+                        <img src="images/judo3.jpg" alt="Salut au début d'un combat" loading="lazy">
+                    </a>
+                    <figcaption>Le salut avant le combat</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/judo4.jpg">
+                        <img src="images/judo4.jpg" alt="Immobilisation au sol" loading="lazy">
+                    </a>
+                    <figcaption>Un travail au sol</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/judo5.jpg">
+                        <img src="images/judo5.jpg" alt="Groupe d'enfants au cours de judo" loading="lazy">
+                    </a>
+                    <figcaption>Un cours pour les jeunes</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/judo6.jpg">
+                        <img src="images/judo6.jpg" alt="Ceintures de plusieurs couleurs" loading="lazy">
+                    </a>
+                    <figcaption>Les ceintures de couleur</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>La suite</h2>
+            <p>
+                Découvrez maintenant <a href="CV_FR.html">mon CV</a>
+                ou <a href="contact.html">contactez-moi</a>.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
