@@ -2,147 +2,171 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>CV Lagache Loïc</title>
-
-  <link rel="stylesheet" href="style_cv.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Loïc Lagache, étudiant en BTS CIEL</title>
+    <!-- style.css : style commun du site / style_cv.css : style propre au CV -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_cv.css">
 </head>
 
 <body>
 
-  <div class="page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="techniques.html">Techniques</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="CV_FR.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="gauche">
+    <h1>Mon CV</h1>
 
-      <div class="rond">🎓</div>
-
-      <div class="titre centre">PROFIL</div>
-      <div class="barre barre-profil"></div>
-
-      <div class="titre">CONTACT</div>
-      <div class="barre"></div>
-      <div class="contact">📍 991 Rue Roger Salengro</div>
-      <div class="contact">✉️ lclagachepro@gmail.com</div>
-      <div class="contact">📞 07 54 37 44 44</div>
-
-      <div class="espace-contact"></div>
-
-      <div class="titre">CENTRE D'INTERÈ</div>
-      <div class="barre"></div>
-      <div class="contact">
-        <u>SPORTS ET JEUX VIDÈO :</u><br>
-        Judo, Musculation, Fortnite, Valorant
-      </div>
-
+    <!-- Choix de la langue : chaque drapeau est un lien vers la version du CV -->
+    <div class="langues">
+        <a href="CV_FR.html">
+            <img class="drapeau" src="images/drapeau_fr.png" alt="Version française du CV">
+        </a>
+        <a href="CV_EN.html" hreflang="en" lang="en">
+            <img class="drapeau" src="images/drapeau_en.png" alt="English version of the CV">
+        </a>
     </div>
 
+    <main>
 
-    <div class="droite">
+        <!-- Le CV : une colonne grise à gauche, une colonne blanche à droite -->
+        <div class="cv">
 
-      <h1 class="nom">Lagache Loïc</h1>
-      <div class="diplome">BTS CIEL</div>
+            <!-- Colonne de gauche : informations personnelles -->
+            <aside class="gauche">
 
-      <div class="titre">PARCOURS SCOLAIRES</div>
-      <div class="barre"></div>
+                <div class="rond">🎓</div>
 
-      <div class="formation">
-        2024–2025 Premiére ciel à Saint Riquier<br>
-      Cybersecurité, Informatique et Electronique
-      </div>
+                <h3>Contact</h3>
+                <p>📍 991 Rue Roger Salengro</p>
+                <p>✉️ <a href="mailto:lclagachepro@gmail.com">lclagachepro@gmail.com</a></p>
+                <p>📞 07 54 37 44 44</p>
 
-      <div class="formation">
-        2025–2026 Terminal CIEL à Saint Riquier<br>
-        Cybersecurité, Informatique et Electronique
-      </div>
+                <h3>Centres d'intérêt</h3>
+                <p><strong>Sports et jeux vidéo :</strong></p>
+                <p>Judo, musculation, Fortnite, Valorant</p>
 
-      <div class="formation">
-        2026–2027 BTS CIEL à La Providence<br>
-        Cybersecurité, Informatique, Réseaux et Electronique
-      </div>
+            </aside>
 
-      <div class="titre espace-experiences">EXPERIENCES</div>
-      <div class="barre"></div>
+            <!-- Colonne de droite : parcours, expériences, compétences -->
+            <div class="droite">
 
-      <div class="experience">
-        <div class="date-lieu">
-          09/06/2025
-          <div class="lieu">Saint Remi</div>
+                <h2>Lagache Loïc</h2>
+                <p class="diplome">BTS CIEL</p>
+
+                <h3>Parcours scolaire</h3>
+
+                <div class="formation">
+                    <p class="intitule">2024–2025 Première CIEL à Saint Riquier</p>
+                    <p>Cybersécurité, Informatique et Électronique</p>
+                </div>
+
+                <div class="formation">
+                    <p class="intitule">2025–2026 Terminale CIEL à Saint Riquier</p>
+                    <p>Cybersécurité, Informatique et Électronique</p>
+                </div>
+
+                <div class="formation">
+                    <p class="intitule">2026–2027 BTS CIEL à La Providence</p>
+                    <p>Cybersécurité, Informatique, Réseaux et Électronique</p>
+                </div>
+
+                <h3>Expériences</h3>
+
+                <!-- Une expérience : date et lieu à gauche, détail à droite -->
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>09/06/2025</p>
+                        <p class="lieu">Saint-Rémi</p>
+                    </div>
+                    <div>
+                        <p class="poste">Stage en informatique à Saint-Rémi</p>
+                        <ul>
+                            <li>Maintenance</li>
+                            <li>Gestion des utilisateurs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>12/12/2024</p>
+                        <p class="lieu">SNCF</p>
+                    </div>
+                    <div>
+                        <p class="poste">2 semaines de stage à la SNCF Réseaux</p>
+                        <ul>
+                            <li>Installation de switch</li>
+                            <li>Maintenance</li>
+                            <li>Réseaux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>25/11/2024</p>
+                        <p class="lieu">SNCF</p>
+                    </div>
+                    <div>
+                        <p class="poste">4 semaines de stage à la SNCF Réseaux</p>
+                        <ul>
+                            <li>Installation de switch</li>
+                            <li>Programmation</li>
+                            <li>Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>03/06/2023</p>
+                        <p class="lieu">HAXES</p>
+                    </div>
+                    <div>
+                        <p class="poste">4 semaines de stage à HAXES</p>
+                        <ul>
+                            <li>Programmation</li>
+                            <li>Maintenance</li>
+                            <li>Administration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Compétences</h3>
+
+                <div class="competences">
+                    <div>
+                        <h4>Langues</h4>
+                        <ul>
+                            <li>Anglais : niveau A2+</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Logiciels maîtrisés</h4>
+                        <ul>
+                            <li>Suite Office</li>
+                            <li>DaVinci Resolve</li>
+                            <li>SolidWorks</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div>
-          <div class="poste">Stage en informatique à Saint-Remi</div>
-          <ul>
-            <li>Maintenance</li>
-            <li>Gestion des utilisateurs</li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="experience">
-        <div class="date-lieu">
-          25/11/2024
-          <div class="lieu">SNCF</div>
-        </div>
-        <div>
-          <div class="poste">4 semaines de stage à la SNCF Réseaux</div>
-          <ul>
-            <li>Installation de Switch</li>
-            <li>Programation</li>
-            <li>Maintenance</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="date-lieu">
-          03/06/2023
-          <div class="lieu">HAXES</div>
-        </div>
-        <div>
-          <div class="poste">4 semaines de stage à HAXES</div>
-          <ul>
-            <li>Programation</li>
-            <li>Maintenance</li>
-            <li>Administration</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="date-lieu">
-          12/12/2024
-          <div class="lieu">SNCF</div>
-        </div>
-        <div>
-          <div class="poste">2 semaine de stage à la SNCF Réseaux</div>
-          <ul>
-            <li>Installation Switch</li>
-            <li>Maintenance</li>
-            <li>Reseaux</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="titre espace-competences">COMPÉTENCES</div>
-      <div class="barre"></div>
-
-      <div class="competences">
-
-        <div class="col-competence">
-          <div class="sous-titre">LANGUES</div>
-          <p>Anglais: Niveau A2+</p>
-        </div>
-
-        <div class="col-competence">
-          <div class="sous-titre">LOGICIEL MAIRISER</div>
-          <p>Suite Office</p>
-          <p>Davinci Resolve</p>
-          <p>SolidWorks</p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
+    </main>
 
 </body>
 

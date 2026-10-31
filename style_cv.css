@@ -1,159 +1,188 @@
-body {
-  background-color: #111;
-  font-family: Arial, sans-serif;
-  color: #444;
-  margin: 0;
-  padding: 10px;
+/* ===== Drapeaux de changement de langue ===== */
+.langues {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-
-.page {
-  display: flex;
-  width: 720px;
-  min-height: 1010px;
-  margin: 0 auto;
-  background-color: white;
+.drapeau {
+    width: 40px;
+    height: auto;
+    border: 1px solid #cccccc;
+    margin: 0 8px;
+    transition: transform 0.2s;
 }
 
+/* Léger zoom au survol d'un drapeau */
+.drapeau:hover {
+    transform: scale(1.1);
+}
 
+/* ===== Carte du CV : deux colonnes côte à côte ===== */
+.cv {
+    display: flex;
+    background-color: white;
+    border-left: 5px solid #b3202a;
+    border-radius: 8px;
+    margin: 20px 10px;
+    overflow: hidden;
+    /* garde les coins arrondis sur la colonne grise */
+}
+
+/* ===== Colonne de gauche ===== */
 .gauche {
-  width: 232px;
-  background-color: #eeeeee;
-  padding: 40px 30px;
-  box-sizing: border-box;
+    flex: 0 0 30%;
+    /* largeur fixe : 30 % de la carte */
+    background-color: #eeeeee;
+    padding: 20px;
+    box-sizing: border-box;
+    /* le padding est compté dans la largeur */
 }
 
-
-.droite {
-  width: 488px;
-  padding: 50px 30px;
-  box-sizing: border-box;
-}
-
-
+/* Cercle contenant l'icône */
 .rond {
-  width: 104px;
-  height: 104px;
-  border: 2px solid black;
-  border-radius: 50%;
-  font-size: 50px;
-  text-align: center;
-  line-height: 104px;
-  margin: 0 auto 40px auto;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #222222;
+    border-radius: 50%;
+    /* 50 % = cercle parfait */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    margin: 0 auto 30px;
 }
 
-
-.titre {
-  font-size: 15px;
-  letter-spacing: 5px;
-  color: #777;
-  margin-bottom: 8px;
+.gauche p {
+    font-size: 0.9em;
+    margin: 6px 0;
 }
 
-
-.barre {
-  width: 60px;
-  height: 5px;
-  background-color: #7f8a8c;
-  margin-bottom: 15px;
+.gauche a {
+    color: #222222;
 }
 
-
-.centre {
-  text-align: center;
+/* ===== Colonne de droite ===== */
+.droite {
+    flex: 1;
+    /* prend toute la place restante */
+    padding: 20px 30px;
 }
 
-.barre-profil {
-  margin: 0 auto 150px auto;
+.droite h2 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #000000;
 }
 
-.espace-contact {
-  height: 110px;
-}
-
-.espace-experiences {
-  margin-top: 30px;
-}
-
-.espace-competences {
-  margin-top: 40px;
-}
-
-
-.nom {
-  font-size: 42px;
-  color: black;
-  margin: 0;
-}
-
+/* Sous-titre "BTS CIEL" espacé */
 .diplome {
-  font-size: 16px;
-  letter-spacing: 5px;
-  color: #777;
-  margin-bottom: 35px;
+    margin: 0 0 20px;
+    letter-spacing: 4px;
+    color: #1b2a49;
 }
 
+/* ===== Titres de rubrique (les deux colonnes) ===== */
+.cv h3 {
+    display: inline-block;
+    /* le trait du bas suit la largeur du texte */
+    margin: 25px 0 15px;
+    padding-bottom: 6px;
+    border-bottom: 4px solid #777777;
+    font-size: 0.95em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #555555;
+}
 
+/* ===== Parcours scolaire ===== */
 .formation {
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 22px;
+    margin-bottom: 12px;
 }
 
+.formation p {
+    margin: 0;
+    font-size: 0.9em;
+}
 
+.intitule {
+    font-weight: bold;
+}
+
+/* ===== Expériences : date à gauche, détail à droite ===== */
 .experience {
-  display: flex;
-  margin-bottom: 15px;
-  font-size: 12px;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.date-lieu {
-  width: 93px;
-  font-weight: bold;
+.date-lieu p {
+    margin: 0;
+    font-size: 0.85em;
 }
 
 .lieu {
-  color: #777;
-  margin-top: 8px;
+    color: #666666;
 }
 
 .poste {
-  font-weight: bold;
-  color: black;
-  font-size: 11px;
-  text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85em;
 }
 
-
-ul {
-  margin: 4px 0 0 0;
-  padding-left: 18px;
-  font-size: 11px;
-  color: #666;
+.experience ul {
+    margin: 4px 0 0;
+    padding-left: 18px;
+    font-size: 0.85em;
 }
 
-
-.contact {
-  font-size: 13px;
-  margin-bottom: 14px;
-}
-
+/* ===== Compétences : deux colonnes ===== */
 .competences {
-  display: flex;
-  font-size: 12px;
-  margin-top: 15px;
+    display: flex;
+    gap: 40px;
 }
 
-.col-competence {
-  width: 50%;
+.competences h4 {
+    margin: 0 0 6px;
+    font-size: 0.85em;
+    text-transform: uppercase;
 }
 
-.col-competence p {
-  margin: 0 0 6px 0;
-  font-size: 13px;
+.competences ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
 }
 
-.sous-titre {
-  color: #333;
-  margin-bottom: 15px;
+/* ===== Pied de page ===== */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #666666;
+    padding: 15px;
+}
+
+/* ===== Mobile : on empile les colonnes ===== */
+@media (max-width: 600px) {
+    .cv {
+        flex-direction: column;
+    }
+
+    .gauche {
+        flex: none;
+    }
+
+    .experience {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .competences {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

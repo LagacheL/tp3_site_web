@@ -2,148 +2,172 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>CV Lagache Loïc</title>
-
-  <link rel="stylesheet" href="style_cv.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV of Loïc Lagache, BTS CIEL student</title>
+    <!-- style.css : style commun du site / style_cv.css : style propre au CV -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_cv.css">
 </head>
 
 <body>
 
-  <div class="page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="techniques.html">Techniques</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="CV_FR.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="gauche">
+    <h1>My CV</h1>
 
-      <div class="rond">🎓</div>
-
-      <div class="titre centre">PROFIL</div>
-      <div class="barre barre-profil"></div>
-
-      <div class="titre">CONTACT</div>
-      <div class="barre"></div>
-      <div class="contact">📍 991 Rue Roger Salengro</div>
-      <div class="contact">✉️ lclagachepro@gmail.com</div>
-      <div class="contact">📞 07 54 37 44 44</div>
-
-      <div class="espace-contact"></div>
-
-      <div class="titre">INTERESTS</div>
-      <div class="barre"></div>
-      <div class="contact">
-        <u>SPORTS :</u><br>
-        Judo, Musculation
-      </div>
-
+    <!-- Choix de la langue : chaque drapeau est un lien vers la version du CV -->
+    <div class="langues">
+        <a href="CV_FR.html" hreflang="fr" lang="fr">
+            <img class="drapeau" src="images/drapeau_fr.png" alt="Version française du CV">
+        </a>
+        <a href="CV_EN.html">
+            <img class="drapeau" src="images/drapeau_en.png" alt="English version of the CV">
+        </a>
     </div>
 
+    <main>
 
-    <div class="droite">
+        <!-- Le CV : une colonne grise à gauche, une colonne blanche à droite -->
+        <div class="cv">
 
-      <h1 class="nom">Lagache Loïc</h1>
-      <div class="diplome">Two years degree CIEL</div>
+            <!-- Colonne de gauche : informations personnelles -->
+            <aside class="gauche">
 
-      <div class="titre">TRAINING</div>
-      <div class="barre"></div>
+                <div class="rond">🎓</div>
 
-      <div class="formation">
-        2024–2025 First Year of Vocational Program A at Saint Riquier<br>
-        Cybersecurity, Computer Science, and Electronics
-      </div>
+                <h3>Contact</h3>
+                <p>📍 991 Rue Roger Salengro</p>
+                <p>✉️ <a href="mailto:lclagachepro@gmail.com">lclagachepro@gmail.com</a></p>
+                <p>📞 07 54 37 44 44</p>
 
-      <div class="formation">
-        2025–2026 Final Year of Vocational Program A at Saint Riquier<br>
-        Cybersecurity, Computer Science, and Electronics
-      </div>
+                <h3>Interests</h3>
+                <p><strong>Sports:</strong></p>
+                <p>Judo, weight training</p>
 
-      <div class="formation">
-        2026–2027 BTS CIEL at La Providence<br>
-        Cybersecurity, Computer Science, Networking, and Electronics
-      </div>
+            </aside>
 
-      <div class="titre espace-experiences">EXPERIENCES</div>
-      <div class="barre"></div>
+            <!-- Colonne de droite : formation, expériences, compétences -->
+            <div class="droite">
 
-      <div class="experience">
-        <div class="date-lieu">
-          09/06/2025
-          <div class="lieu">Saint Remi</div>
+                <h2>Lagache Loïc</h2>
+                <p class="diplome">BTS CIEL (two-year degree)</p>
+
+                <h3>Education</h3>
+
+                <div class="formation">
+                    <p class="intitule">2024–2025 First year of the CIEL vocational baccalaureate at Saint Riquier</p>
+                    <p>Cybersecurity, Computer Science and Electronics</p>
+                </div>
+
+                <div class="formation">
+                    <p class="intitule">2025–2026 Final year of the CIEL vocational baccalaureate at Saint Riquier</p>
+                    <p>Cybersecurity, Computer Science and Electronics</p>
+                </div>
+
+                <div class="formation">
+                    <p class="intitule">2026–2027 BTS CIEL at La Providence</p>
+                    <p>Cybersecurity, Computer Science, Networking and Electronics</p>
+                </div>
+
+                <h3>Experience</h3>
+
+                <!-- Une expérience : date et lieu à gauche, détail à droite -->
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>09/06/2025</p>
+                        <p class="lieu">Saint-Rémi</p>
+                    </div>
+                    <div>
+                        <p class="poste">IT internship at Saint-Rémi</p>
+                        <ul>
+                            <li>Maintenance</li>
+                            <li>User management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>12/12/2024</p>
+                        <p class="lieu">SNCF</p>
+                    </div>
+                    <div>
+                        <p class="poste">2-week internship at SNCF Réseaux</p>
+                        <ul>
+                            <li>Switch installation</li>
+                            <li>Maintenance</li>
+                            <li>Networks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>25/11/2024</p>
+                        <p class="lieu">SNCF</p>
+                    </div>
+                    <div>
+                        <p class="poste">4-week internship at SNCF Réseaux</p>
+                        <ul>
+                            <li>Switch installation</li>
+                            <li>Programming</li>
+                            <li>Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="date-lieu">
+                        <p>03/06/2023</p>
+                        <p class="lieu">HAXES</p>
+                    </div>
+                    <div>
+                        <p class="poste">4-week internship at HAXES</p>
+                        <ul>
+                            <li>Programming</li>
+                            <li>Maintenance</li>
+                            <li>Troubleshooting</li>
+                            <li>Administration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Skills</h3>
+
+                <div class="competences">
+                    <div>
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>English: level A2+</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Software proficiency</h4>
+                        <ul>
+                            <li>Microsoft Office</li>
+                            <li>DaVinci Resolve</li>
+                            <li>SolidWorks</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div>
-          <div class="poste">Internship with the IT Coordinator at Saint-Remi</div>
-          <ul>
-            <li>Maintenance</li>
-            <li>Manage Users</li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="experience">
-        <div class="date-lieu">
-          25/11/2024
-          <div class="lieu">SNCF</div>
-        </div>
-        <div>
-          <div class="poste">4-week internship at SNCF Réseaux</div>
-          <ul>
-            <li>Switch Installation</li>
-            <li>Programming</li>
-            <li>Maintenance</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="date-lieu">
-          03/06/2023
-          <div class="lieu">HAXES</div>
-        </div>
-        <div>
-          <div class="poste">4-Week Internship at HAXES</div>
-          <ul>
-            <li>Programming</li>
-            <li>Maintenance</li>
-            <li>Troubleshooting</li>
-            <li>Administrative</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="experience">
-        <div class="date-lieu">
-          12/12/2024
-          <div class="lieu">SNCF</div>
-        </div>
-        <div>
-          <div class="poste">2-week internship at SNCF Réseaux</div>
-          <ul>
-            <li>Switch Installation</li>
-            <li>Maintenance</li>
-            <li>Networks</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="titre espace-competences">COMPÉTENCES</div>
-      <div class="barre"></div>
-
-      <div class="competences">
-
-        <div class="col-competence">
-          <div class="sous-titre">LANGUAGES</div>
-          <p>English: Level A2+</p>
-        </div>
-
-        <div class="col-competence">
-          <div class="sous-titre">SOFTWARE PROFICIENCY</div>
-          <p>Suite Office</p>
-          <p>Davinci Resolve</p>
-          <p>SolidWorks</p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
+    </main>
 
 </body>
 
