@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact : écrire à Loïc Lagache</title>
+    <meta name="description" content="Contactez-moi par mail grâce au formulaire de contact.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="techniques.html">Techniques</a></li>
+                <li><a href="grades.html">Grades</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="CV_FR.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Me contacter</h1>
+
+    <main>
+
+        <section>
+            <h2>Par mail</h2>
+            <p>
+                Vous pouvez m'écrire directement à
+                <!-- mailto: ouvre la messagerie du visiteur avec mon adresse déjà remplie -->
+                <a href="mailto:lclagachepro@gmail.com">lclagachepro@gmail.com</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formulaire de contact</h2>
+            <p>
+                Remplissez les champs puis cliquez sur « Envoyer » : votre
+                logiciel de messagerie s'ouvrira avec le message prêt à partir.
+            </p>
+
+            <!-- Le formulaire ouvre la messagerie du visiteur grâce à mailto: -->
+            <form action="mailto:lclagachepro@gmail.com" method="post" enctype="text/plain">
+
+                <fieldset>
+                    <legend>Vos informations</legend>
+
+                    <!-- for="nom" relie l'étiquette au champ qui a id="nom" -->
+                    <div class="champ">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="champ">
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+
+                    <div class="champ">
+                        <label for="age">Âge</label>
+                        <input type="number" id="age" name="age" min="5" max="120" required>
+                    </div>
+
+                    <!-- Boutons radio : un seul choix possible grâce au même name -->
+                    <fieldset class="sexe">
+                        <legend>Sexe</legend>
+                        <label>
+                            <input type="radio" name="sexe" value="femme" required> Femme
+                        </label>
+                        <label>
+                            <input type="radio" name="sexe" value="homme"> Homme
+                        </label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre message</legend>
+
+                    <div class="champ">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Envoyer</button>
+                <button type="reset">Effacer</button>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

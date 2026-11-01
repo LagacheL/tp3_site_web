@@ -54,8 +54,7 @@ main {
 
 section {
     background-color: white;
-    border-left: 5px solid #b3202a;
-    /* trait rouge sur le côté gauche */
+    border-left: none;
     border-radius: 8px;
     /* coins arrondis */
     padding: 10px 20px;
@@ -148,14 +147,79 @@ figure img {
     /* animation douce au survol */
 }
 
-/* Léger zoom quand la souris passe sur une vignette */
-figure img:hover {
-    transform: scale(1.05);
-}
-
 /* Légende sous la vignette */
 figcaption {
     text-align: center;
     font-size: 0.9em;
     margin-top: 5px;
+}
+
+/* ===== Formulaire de contact ===== */
+
+/* Cadre qui regroupe des champs */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1b2a49;
+    padding: 0 8px;
+}
+
+/* Un champ : l'étiquette au-dessus, le champ en dessous */
+.champ {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* Contour bleu quand on clique dans un champ */
+input:focus,
+textarea:focus {
+    outline: 2px solid #1b2a49;
+}
+
+/* Groupe "Sexe" : sans cadre, boutons côte à côte */
+fieldset.sexe {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset.sexe label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Boutons Envoyer / Effacer */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b3202a;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b2a49;
 }
