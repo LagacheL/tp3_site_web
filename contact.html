@@ -33,7 +33,6 @@
             <h2>Par mail</h2>
             <p>
                 Vous pouvez m'écrire directement à
-                <!-- mailto: ouvre la messagerie du visiteur avec mon adresse déjà remplie -->
                 <a href="mailto:lclagachepro@gmail.com">lclagachepro@gmail.com</a>.
             </p>
         </section>
@@ -45,48 +44,40 @@
                 logiciel de messagerie s'ouvrira avec le message prêt à partir.
             </p>
 
-            <!-- Le formulaire ouvre la messagerie du visiteur grâce à mailto: -->
+            <!-- Le formulaire sans les grands carrés -->
             <form action="mailto:lclagachepro@gmail.com" method="post" enctype="text/plain">
 
-                <fieldset>
-                    <legend>Vos informations</legend>
+                <!-- for="nom" relie l'étiquette au champ qui a id="nom" -->
+                <div class="champ">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
 
-                    <!-- for="nom" relie l'étiquette au champ qui a id="nom" -->
-                    <div class="champ">
-                        <label for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom" required>
-                    </div>
+                <div class="champ">
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
 
-                    <div class="champ">
-                        <label for="mail">Mail</label>
-                        <input type="email" id="mail" name="mail" required>
-                    </div>
+                <div class="champ">
+                    <label for="age">Âge</label>
+                    <input type="number" id="age" name="age" min="5" max="120" required>
+                </div>
 
-                    <div class="champ">
-                        <label for="age">Âge</label>
-                        <input type="number" id="age" name="age" min="5" max="120" required>
-                    </div>
+                <!-- Boutons radio : un seul choix possible grâce au même name -->
+                <div class="champ">
+                    <label>Sexe</label>
+                    <label>
+                        <input type="radio" name="sexe" value="femme" required> Femme
+                    </label>
+                    <label>
+                        <input type="radio" name="sexe" value="homme"> Homme
+                    </label>
+                </div>
 
-                    <!-- Boutons radio : un seul choix possible grâce au même name -->
-                    <fieldset class="sexe">
-                        <legend>Sexe</legend>
-                        <label>
-                            <input type="radio" name="sexe" value="femme" required> Femme
-                        </label>
-                        <label>
-                            <input type="radio" name="sexe" value="homme"> Homme
-                        </label>
-                    </fieldset>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Votre message</legend>
-
-                    <div class="champ">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                </fieldset>
+                <div class="champ">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
 
                 <button type="submit">Envoyer</button>
                 <button type="reset">Effacer</button>

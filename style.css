@@ -190,12 +190,6 @@ textarea {
     font-size: 1em;
 }
 
-/* Contour bleu quand on clique dans un champ */
-input:focus,
-textarea:focus {
-    outline: 2px solid #1b2a49;
-}
-
 /* Groupe "Sexe" : sans cadre, boutons côte à côte */
 fieldset.sexe {
     border: none;
